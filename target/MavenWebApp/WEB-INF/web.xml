@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<listener>
+		<listener-class>com.conf.InitialisationDaoFactory</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>CreationCampagne</servlet-name>
+		<servlet-class>com.servlet.CreationCampagne</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>AfficheCampagne</display-name>
+		<servlet-name>AfficheCampagne</servlet-name>
+		<servlet-class>com.servlet.AfficheCampagne</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SupprimeCampagne</display-name>
+		<servlet-name>SupprimeCampagne</servlet-name>
+		<servlet-class>com.servlet.SupprimeCampagne</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Test</display-name>
+		<servlet-name>Test</servlet-name>
+		<servlet-class>com.servlet.Test</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreationCampagne</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AfficheCampagne</servlet-name>
+		<url-pattern>/affichecampagne</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/test1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SuppressionCampagne</servlet-name>
+		<url-pattern>/SuppressionCampagne</url-pattern>
+	</servlet-mapping>
+</web-app>
